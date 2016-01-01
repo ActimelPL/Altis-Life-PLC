@@ -562,6 +562,9 @@ class CfgVehicles {
         	} },
         	{ "Cop", "cop", {
 	                "#(ai,64,64,1)Fresnel(1.3,7)"
+        	} },
+        	{ "Policja", "cop", {
+	                "textures\suv_cop.paa"
         	} }
 	      };
     };

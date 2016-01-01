@@ -25,11 +25,11 @@
 */
 class Life_Settings {
 	/* Persistent Settings */
-	save_civ_weapons = true; //Allow civilians to save weapons on them?
+	save_civ_weapons = false; //Allow civilians to save weapons on them?
 	save_virtualItems = true; //Save Virtual items (all sides)?
 
 	/* Revive system settings */
-	revive_cops = false; //true to enable cops the ability to revive everyone or false for only medics/ems.
+	revive_cops = true; //true to enable cops the ability to revive everyone or false for only medics/ems.
 	revive_fee = 1500; //Revive fee that players have to pay and medics / EMS are rewarded
 
 	/* House related settings */
@@ -64,7 +64,7 @@ class Life_Settings {
 	noatm_timer = 10; //Time in minutes that players won't be able to deposit his money after selling stolen gold
 
 	/* Spyglass settings */
-	 spyglass_init = true; //Enable or disable spyglass
+	 spyglass_init = false; //Enable or disable spyglass
 
 	/* Skins settings */
 	civ_skins = false; //Enable or disable civilian skins. Before enabling, you must add all the SEVEN files to textures folder. (It must be named as: civilian_uniform_1.jpg, civilian_uniform_2.jpg...civilian_uniform_6.jpg, civilian_uniform_7.jpg)
