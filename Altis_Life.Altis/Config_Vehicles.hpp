@@ -79,7 +79,7 @@ class CarShops {
 		side = "cop";
 		vehicles[] = {
 				{ "C_Offroad_01_F", 5000, { "" }, { "", "", -1 } },
-				{ "C_Hatchback_01_sport_F", 20000, { "" }, {"", "", -1 } },
+				{ "C_Hatchback_01_sport_F", 20000, { "" }, {"life_coplevel", "SCALAR", 2 } },
 				{ "C_SUV_01_F", 20000, { "" }, { "", "", -1 } },
 				{ "B_MRAP_01_F", 30000, { "" }, { "life_coplevel", "SCALAR", 3 } }
 		};
@@ -383,14 +383,14 @@ class CfgVehicles {
 	                "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa",
 	                "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa"
         	} },
-			{ "Taxi", "civ", {
-	                "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
+        	{ "Kavala", "cop", {
+	                "textures\policja_kavala_off.paa"
         	} },
-        	{ "Fed", "fed", {
-	                "#(ai,64,64,1)Fresnel(0.3,3)"
+            { "Teren", "cop", {
+	                "textures\policja_teren_off.paa"
         	} },
-        	{ "Policja", "cop", {
-	                "textures\offroad_cop.paa"
+            { "Miasta", "cop", {
+	                "textures\policja_miasto_off.paa"
         	} }
 	    };
     };
@@ -433,8 +433,14 @@ class CfgVehicles {
         	{ "Green", "civ", {
 	                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             } },
-        	{ "Policja", "cop", {
-	                "textures\lapd_hatchback.paa"
+        	{ "Kavala", "cop", {
+	                "textures\policja_kavala_hat.paa"
+	        } },
+			{ "Teren", "cop", {
+	                "textures\policja_teren_hat.paa"
+	        } },
+        	{ "Miasta", "cop", {
+	                "textures\policja_miasto_hat.paa"
 	        } }
         };
     };
@@ -558,8 +564,17 @@ class CfgVehicles {
         	{ "Orange", "civ", {
 	                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
         	} },
-        	{ "Policja", "cop", {
-	                "textures\suv_cop.paa"
+        	{ "Taxi", "civ", {
+	                "textures\suv_taxi.paa"
+        	} },
+        	{ "Kavala", "cop", {
+	                "textures\policja_kavala_suv.paa"
+        	} },
+        	{ "Teren", "cop", {
+	                "textures\policja_teren_suv.paa"
+        	} },
+        	{ "Miasta", "cop", {
+	                "textures\policja_miasto_suv.paa"
         	} }
 	      };
     };
