@@ -193,6 +193,19 @@ switch (_code) do {
 		};
 	};
 	
+	//zatyczki
+	case 207: {
+	     if(_shift) then {
+		     switch (player getVariable["Earplugs",0]) do {
+			     case 0: {hintSilent "Zatyczki wyciszają 90% otoczenia"; 1 fadeSound 0.1; player setVariable ["Earplugs", 10]; };
+			     case 10: {hintSilent "Zatyczki wyciszają 60% otoczenia"; 1 fadeSound 0.4; player setVariable ["Earplugs", 40]; };
+			     case 40: {hintSilent "Zatyczki wyciszają 30% otoczenia"; 1 fadeSound 0.7; player setVariable ["Earplugs", 70]; };
+			     case 70: {hintSilent "Zatyczki wyciągnięte"; 1 fadeSound 1; player setVariable ["Earplugs", 0]; };
+				};
+		    };
+	   };
+   };
+	
 	//U Key
 	case 22: {
 		if(!_alt && !_ctrlKey) then {
@@ -240,6 +253,5 @@ switch (_code) do {
 			};
 		};
 	};
-};
 
 _handled;
