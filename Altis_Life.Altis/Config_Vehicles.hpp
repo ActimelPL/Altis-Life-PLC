@@ -79,6 +79,7 @@ class CarShops {
 		side = "cop";
 		vehicles[] = {
 				{ "C_Offroad_01_F", 5000, { "" }, { "", "", -1 } },
+				{ "C_Hatchback_01_sport_F", 20000, { "" }, {"", "", -1 } },
 				{ "C_SUV_01_F", 20000, { "" }, { "", "", -1 } },
 				{ "B_MRAP_01_F", 30000, { "" }, { "life_coplevel", "SCALAR", 3 } }
 		};
@@ -382,14 +383,14 @@ class CfgVehicles {
 	                "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa",
 	                "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa"
         	} },
-					{ "Taxi", "civ", {
+			{ "Taxi", "civ", {
 	                "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
         	} },
         	{ "Fed", "fed", {
 	                "#(ai,64,64,1)Fresnel(0.3,3)"
         	} },
-        	{ "Police", "cop", {
-	                "#(ai,64,64,1)Fresnel(1.3,7)"
+        	{ "Policja", "cop", {
+	                "textures\offroad_cop.paa"
         	} }
 	    };
     };
@@ -432,8 +433,8 @@ class CfgVehicles {
         	{ "Green", "civ", {
 	                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             } },
-        	{ "Police", "cop", {
-	                "#(ai,64,64,1)Fresnel(1.3,7)"
+        	{ "Policja", "cop", {
+	                "textures\lapd_hatchback.paa"
 	        } }
         };
     };
@@ -551,17 +552,11 @@ class CfgVehicles {
         	{ "Dark Red", "civ", {
 	                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa"
             } },
-        	{ "Black", "cop", {
-	                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
-        	} },
         	{ "Silver", "civ", {
 	                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa"
         	} },
-        		{ "Orange", "civ", {
+        	{ "Orange", "civ", {
 	                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
-        	} },
-        	{ "Cop", "cop", {
-	                "#(ai,64,64,1)Fresnel(1.3,7)"
         	} },
         	{ "Policja", "cop", {
 	                "textures\suv_cop.paa"

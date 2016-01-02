@@ -201,7 +201,6 @@ switch (_code) do {
 			     case 10: {hintSilent "Zatyczki wyciszają 60% otoczenia"; 1 fadeSound 0.4; player setVariable ["Earplugs", 40]; };
 			     case 40: {hintSilent "Zatyczki wyciszają 30% otoczenia"; 1 fadeSound 0.7; player setVariable ["Earplugs", 70]; };
 			     case 70: {hintSilent "Zatyczki wyciągnięte"; 1 fadeSound 1; player setVariable ["Earplugs", 0]; };
-				};
 		    };
 	   };
    };
@@ -253,5 +252,5 @@ switch (_code) do {
 			};
 		};
 	};
-
+};
 _handled;
